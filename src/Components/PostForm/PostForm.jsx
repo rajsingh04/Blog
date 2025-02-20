@@ -19,7 +19,6 @@ export const PostForm = ({ post }) => {
 
 	const navigate = useNavigate();
 	const userData = useSelector((state) => state.auth.userData);
-	console.log(userData.$id);
 	const submit = async (data) => {
 		if (post) {
 			const file = data.image[0]
